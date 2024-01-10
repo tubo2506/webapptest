@@ -1,0 +1,7 @@
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\Hello_aps.exe
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\appsettings.json
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\Hello_aps.dll
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\Hello_aps.deps.json
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\Hello_aps.runtimeconfig.json
+C:\Users\LETUDIVN\Documents\Hello_aps\bin\Release\net8.0\publish\Hello_aps.pdb

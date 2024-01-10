@@ -1,0 +1,18 @@
+{
+  "name": "hello_aps",
+  "version": "1.0.0",
+  "description": "This is a test",
+  "main": "index.js",
+  "scripts": {
+    "test": "abc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dè"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "tule",
+  "license": "ISC"
+}
