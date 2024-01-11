@@ -26,3 +26,4 @@ C:\Users\LETUDIVN\Documents\Hello_aps\obj\Debug\net8.0\ref\Hello_aps.dll
 C:\Users\LETUDIVN\Documents\Hello_aps\obj\Debug\net8.0\Hello_aps.RazorAssemblyInfo.cache
 C:\Users\LETUDIVN\Documents\Hello_aps\obj\Debug\net8.0\Hello_aps.RazorAssemblyInfo.cs
 C:\Users\LETUDIVN\Documents\Hello_aps\bin\Debug\net8.0\package.json
+C:\Users\LETUDIVN\Documents\Hello_aps\obj\Debug\net8.0\Hello_aps.sourcelink.json
