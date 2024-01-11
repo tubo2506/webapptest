@@ -1,0 +1,9 @@
+@using Item_CS
+@model Item
+        <div class="card" id="card">
+            <img src=@Model.UrlImage alt="Image 1">
+            <h3>Card @Model.Index</h3>
+            <p>The price: $@Model.Pirce</p>
+            <p>This is some text for card @Model.Index. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="/">Read More</a>
+        </div>

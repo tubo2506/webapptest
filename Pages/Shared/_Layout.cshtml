@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" style = "css" href="./Layout.css">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #effffe;
+        }
+        h1 {
+        text-align: center;
+        color: black;
+        margin: auto;
+        }
+        nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00a89e;
+        }
+        nav ul {
+        list-style: none;
+        display: flex;
+        }
+        nav ul li {
+        margin: 5px;
+        }
+        nav ul li a {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s; /* Add transition for hover effects */
+        }
+        nav ul li a:hover {
+        background-color: white; /* Change the background color on hover */
+        color: darkblue; /* Change the text color on hover */
+        }
+        nav ul li a::before {
+        content: url("icon.png"); /* Insert an icon from an image URL */
+        margin-right: 10px; /* Add some space between the icon and the text */
+        }
+        .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        .card {
+        width: 25%;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 2%;
+        box-shadow: 2px 2px 5px gray;
+        background-color: white;
+        }
+        .card div:hover {
+        box-shadow: 4px 4px 10px rgb(120, 118, 118);
+        }
+        .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        }
+        .card h3 {
+        text-align: center;
+        }
+        .card p {
+        text-align: justify;
+        }
+        .card a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: blue;
+        }
+        .signin_container_all{
+            display: flex;
+            justify-content: center;
+            margin-top: 36px;
+        }
+        .signin_container {
+        width: 50%;
+        margin: 20 auto;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px gray;
+        background-color: white;
+        }
+        .signin_container form {
+        display: flex;
+        flex-direction: column;
+        }
+        .signin_container form label {
+        margin: 10px 0;
+        }
+        .signin_container form input {
+        padding: 10px;
+        border: 1px solid gray;
+        }
+        .signin_container form button {
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        }
+        .signin_container form button:hover {
+        background-color: rgb(131, 255, 131);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        }
+        .signin_container form p {
+        text-align: center;
+        }
+        .signin_container form p a {
+        text-decoration: none;
+        color: blue;
+        }
+        .signin_container .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .signin_container .social img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        cursor: pointer;
+        }
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .col {
+        flex: 1;
+        padding: 20px;
+        }
+
+        /* Footer styles */
+        .footer {
+        background-color: #00a89e;
+        color: #fff;
+        }
+
+        .footer h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        }
+
+        .footer ul {
+        list-style: none;
+        }
+
+        .footer ul li a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+        color: #ccc;
+        }
+
+        .footer p {
+        font-size: 14px;
+        }
+
+        .footer form {
+        display: flex;
+        align-items: center;
+        }
+
+        .footer form input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        }
+
+        .footer form button {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+        }
+
+        .footer form button:hover {
+        background-color: #ccc;
+        }
+        .card {
+        position: relative;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+        }
+
+        .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .card-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        }
+
+        .card-info h3 {
+        margin: 0;
+        font-size: 24px;
+        }
+
+        .card-info p {
+        margin: 10px 0;
+        font-size: 16px;
+        }
+
+        .card-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: yellow;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+        .card:hover {
+        filter: drop-shadow(0 0 10px blue);
+        transform: scale(1.1);
+        }
+
+        .card:hover .card-info {
+        opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <nav>
+        <!-- Create a navigation bar with links to other pages -->
+        <div class="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAjCAYAAAB7GINjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2OWE5MDEwMi0wZTc1LTRkODMtODVmYy01ZWU2ZTA4NzNkNmEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0MwQ0E4RERGNEZGMTFFNTgxQjA4NjY0RkZBMEMxRDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0MwQ0E4RENGNEZGMTFFNTgxQjA4NjY0RkZBMEMxRDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDplNTdkNTA2MS03NTVmLTQ4MmUtYjE5Yy0zZWU0ZDY2MjBhYTMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo2NzhmZjdlNi0zZDY3LTExNzktYjY4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" alt="Toy Shop Logo" width="100" height="50">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="/Privacy">Privacy</a></li>
+                <li><a href="/signin">Sign In</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contact column -->
+                <div class="col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@myshop.com"><i class="fa fa-envelope"></i> info@myshop.com</a></li>
+                        <li><a href="tel:+1234567890"><i class="fa fa-phone"></i> +1234567890</a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <!-- Address column -->
+                <div class="col">
+                    <h4>Address</h4>
+                    <p><i class="fa fa-map-marker"></i> 123 Main Street, Hong Kong</p>
+                </div>
+                <!-- Policy column -->
+                <div class="col">
+                    <h4>Policy</h4>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Security column -->
+                <div class="col">
+                    <h4>Security</h4>
+                    <p>We use SSL encryption to protect your data and transactions.</p>
+                    <img src="ssl.png" alt="SSL logo" width="100" height="50">
+                </div>
+            </div>
+            <!-- Newsletter form -->
+            <div class="row">
+                <div class="col">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form id="newsletter-form" method="post" action="#">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" id="submit" name="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Copyrigth notice -->
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2024 My Shop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom script -->
+    <script src="/Pages/Shared/_Layout.js"></script>
+</body>
+</html>
