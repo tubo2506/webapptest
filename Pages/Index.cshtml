@@ -2,144 +2,29 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Website</title>
-    <style>
-        /* Add some style to the page */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #effffe;
+@{
+    int numberCard = 72;
+    string[] images = new string[] {
+        "https://i.pinimg.com/564x/c7/bd/16/c7bd16fd4a262efbd877c2fc13d46970.jpg",
+        "https://i.pinimg.com/564x/3c/a8/a0/3ca8a086748918b6bf4f7bfdde35fc6b.jpg",
+        "https://i.pinimg.com/564x/04/d8/0c/04d80c2668f063e1d81678255cc183ca.jpg",
+        "https://i.pinimg.com/564x/1a/2d/0d/1a2d0d2d903dddd8ef392ed1360e076c.jpg",
+        "https://i.pinimg.com/736x/36/d9/2f/36d92f0a795b012adadaad78302015c0.jpg",
+        "https://i.pinimg.com/564x/d3/6b/41/d36b4122bc952809f5930d0e8b26cfb2.jpg"
+    };
+}
+
+
+<div class="container">
+    @{
+        for(int i = 1 ; i <= numberCard; i++){
+            int index = i % images.Length;
+            <div class="card" id="card">
+                <img src=@images[index] alt="Image 1">
+                <h3>Card @i</h3>
+                <p>This is some text for card @i. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="/">Read More</a>
+            </div>
         }
-        h1 {
-            text-align: center;
-            color: black;
-            margin: auto;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #00a89e;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-        nav ul li {
-            margin: 5px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-            position: relative;
-            padding: 10px;
-            border-radius: 10px;
-            transition: 0.3s; /* Add transition for hover effects */
-        }
-        nav ul li a:hover {
-            background-color: white; /* Change the background color on hover */
-            color: darkblue; /* Change the text color on hover */
-        }
-        nav ul li a::before {
-            content: url("icon.png"); /* Insert an icon from an image URL */
-            margin-right: 10px; /* Add some space between the icon and the text */
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .card {
-            width: 25%;
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 2%;
-            box-shadow: 2px 2px 5px gray;
-            background-color: white;
-        }
-        .card div:hover {
-            box-shadow: 4px 4px 10px rgb(120, 118, 118);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card h3 {
-            text-align: center;
-        }
-        .card p {
-            text-align: justify;
-        }
-        .card a {
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            color: blue;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <nav>
-        <!-- Create a navigation bar with links to other pages -->
-        <div class="logo">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAjCAYAAAB7GINjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2OWE5MDEwMi0wZTc1LTRkODMtODVmYy01ZWU2ZTA4NzNkNmEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0MwQ0E4RERGNEZGMTFFNTgxQjA4NjY0RkZBMEMxRDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0MwQ0E4RENGNEZGMTFFNTgxQjA4NjY0RkZBMEMxRDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDplNTdkNTA2MS03NTVmLTQ4MmUtYjE5Yy0zZWU0ZDY2MjBhYTMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo2NzhmZjdlNi0zZDY3LTExNzktYjY4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" alt="Toy Shop Logo" width="100" height="50">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="/index">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="/signin">Sign In</a></li>
-                <li><a href="/signup">Sign Up</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <!-- Create four cards with different content -->
-        <div class="card" id="card">
-            <img src="https://i.pinimg.com/564x/c7/bd/16/c7bd16fd4a262efbd877c2fc13d46970.jpg" alt="Image 1">
-            <h3>Card 1</h3>
-            <p>This is some text for card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="/">Read More</a>
-        </div>
-        <div class="card" id="card">
-            <img src="https://i.pinimg.com/564x/3c/a8/a0/3ca8a086748918b6bf4f7bfdde35fc6b.jpg" alt="Image 2">
-            <h3>Card 2</h3>
-            <p>This is some text for card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="card" id="card">
-            <img src="https://i.pinimg.com/564x/04/d8/0c/04d80c2668f063e1d81678255cc183ca.jpg" alt="Image 3">
-            <h3>Card 3</h3>
-            <p>This is some text for card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="card" id="card">
-            <img src="https://i.pinimg.com/564x/1a/2d/0d/1a2d0d2d903dddd8ef392ed1360e076c.jpg" alt="Image 4">
-            <h3>Card 4</h3>
-            <p>This is some text for card 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="card" id="card">
-            <img src="https://i.pinimg.com/736x/36/d9/2f/36d92f0a795b012adadaad78302015c0.jpg" alt="Image 4">
-            <h3>Card 4</h3>
-            <p>This is some text for card 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="card" id="card">
-            <img src="https://i.pinimg.com/564x/d3/6b/41/d36b4122bc952809f5930d0e8b26cfb2.jpg" alt="Image 4">
-            <h3>Card 4</h3>
-            <p>This is some text for card 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Read More</a>
-        </div>
+    }
     </div>
-</body>
-</html>

@@ -3,117 +3,9 @@
 @{
     ViewData["Title"] = "Sign In";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Toy Shop - Sign In</title>
-    <style>
-        /* Add some style to the page */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #effffe;
-        }
-        h1 {
-            text-align: center;
-            color: black;
-            margin: auto;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #00a89e;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-        nav ul li {
-            margin: 5px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-            position: relative;
-            padding: 10px;
-            border-radius: 10px;
-            transition: 0.3s; /* Add transition for hover effects */
-        }
-        nav ul li a:hover {
-            background-color: white; /* Change the background color on hover */
-            color: darkblue; /* Change the text color on hover */
-        }
-        nav ul li a::before {
-            content: url("icon.png"); /* Insert an icon from an image URL */
-            margin-right: 10px; /* Add some space between the icon and the text */
-        }
-        .container {
-            width: 50%;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid black;
-            box-shadow: 2px 2px 5px gray;
-            background-color: white;
-        }
-        .container form {
-            display: flex;
-            flex-direction: column;
-        }
-        .container form label {
-            margin: 10px 0;
-        }
-        .container form input {
-            padding: 10px;
-            border: 1px solid gray;
-        }
-        .container form button {
-            margin: 10px 0;
-            padding: 10px;
-            border: none;
-            background-color: green;
-            color: white;
-            cursor: pointer;
-        }
-        .container form p {
-            text-align: center;
-        }
-        .container form p a {
-            text-decoration: none;
-            color: blue;
-        }
-        .container .social {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container .social img {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My site</h1>
-    <nav>
-        <!-- Create a navigation bar with links to other pages -->
-        <div class="logo">
-            <img src="logo.png" alt="Toy Shop Logo" width="100" height="50">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="/index">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="signin.html">Sign In</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
+
+<div class = "signin_container_all">
+    <div class="signin_container" id="signin">
         <!-- Create a sign in form with email, password and button -->
         <form action="signin.aspx" method="post">
             <label for="email">Email:</label>
@@ -130,5 +22,4 @@
             <img src="google.png" alt="Google" onclick="signInWithGoogle()">
         </div>
     </div>
-</body>
-</html>
+</div>
