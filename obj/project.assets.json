@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\LETUDIVN\\.nuget\\packages\\": {}
+    "C:\\Users\\Demo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LETUDIVN\\Documents\\CS_RazorTp\\CS_RazorTp.csproj",
+      "projectUniqueName": "C:\\Users\\Demo\\Documents\\GitHub\\webapptest\\CS_RazorTp.csproj",
       "projectName": "CS_RazorTp",
-      "projectPath": "C:\\Users\\LETUDIVN\\Documents\\CS_RazorTp\\CS_RazorTp.csproj",
-      "packagesPath": "C:\\Users\\LETUDIVN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LETUDIVN\\Documents\\CS_RazorTp\\obj\\",
+      "projectPath": "C:\\Users\\Demo\\Documents\\GitHub\\webapptest\\CS_RazorTp.csproj",
+      "packagesPath": "C:\\Users\\Demo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Demo\\Documents\\GitHub\\webapptest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LETUDIVN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Demo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

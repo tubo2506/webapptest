@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Hello_aps.props" />
-</Project>
