@@ -18,7 +18,7 @@ namespace Components{
         double[] itemPrice = new double[]{
                 23.44, 344.33, 588.22, 212.33, 288.44, 10.32,994.32
             };
-        public IViewComponentResult Invoke(){
+        public IViewComponentResult Invoke(bool order){
             List<Item> item = new List<Item>();
             for(int i = 1 ; i <= numberCard; i++){
                 Random rdn = new Random();
@@ -29,7 +29,14 @@ namespace Components{
                     UrlImage = images[index],
                     Price = itemPrice[randomI]});
             };
-            return View<List<Item>>(item);
+            List<Item> _item = null;
+            if(order){
+                _item = item.OrderBy(p => p.Price).ToList();
+            }
+            else{
+                _item = item.OrderByDescending(p => p.Price).ToList();
+            }
+            return View<List<Item>>(_item);
 
     }
 }
