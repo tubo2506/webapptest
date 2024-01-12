@@ -1,0 +1,12 @@
+@using Item_CS
+@model List<Item>
+
+@foreach(var it in Model){
+        <div class="card" id="card">
+            <img src=@it.UrlImage alt="Image 1">
+            <h3>Card @it.Index</h3>
+            <p>The price: $@it.Price</p>
+            <p>This is some text for card @it.Index. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="/">Read More</a>
+        </div>
+        }
