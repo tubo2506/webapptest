@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/LETUDIVN/Documents/Hello_aps/Pages/pagemodel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGFnZW1vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Shared/Components/ItemInfo/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcSXRlbUluZm9cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Shared/Components/ViewItems/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcVmlld0l0ZW1zXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Shared/_Layout.cshtml]
@@ -52,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2lnbnVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LETUDIVN/Documents/Hello_aps/Pages/ViewItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0l0ZW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/_ViewImports.cshtml]

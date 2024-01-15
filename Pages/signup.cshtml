@@ -6,9 +6,9 @@
 <div class="signin_container_all">
     <div class="signin_container">
         <!-- Create a sign up form with name, email, password, address and button -->
-        <form action="signup.aspx" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <form action="signup" method="post">
+            <label asp-for = "Name"  for="name">Name:</label>
+            <input asp-for = "Name" type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="password">Password:</label>

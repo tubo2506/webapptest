@@ -1,0 +1,10 @@
+@page "/sanpham/{id?}"
+@{
+    ViewData["Tilte"] = "San pham";
+}
+@{
+    var id = HttpContext.Request.RouteValues["id"];
+    int idInt = Convert.ToInt32(id);
+
+}
+@await Component.InvokeAsync("ViewItems",idInt);

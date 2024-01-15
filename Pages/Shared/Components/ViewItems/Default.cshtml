@@ -1,0 +1,20 @@
+@using Item_CS
+@model Item
+
+<div class="Product-container">
+<div class="product-card">
+  <div class="product-image">
+    <img src=@Model.UrlImage alt="Product image">
+  </div>
+  <div class="product-info">
+    <h3 class="product-name">Product number @Model.Index</h3>
+    <p class="product-description">This is a brief description of the product.</p>
+    <div class="product-price">
+      <span class="original-price">@Model.Price</span>
+      <span class="discount-price">@Math.Round(@Model.Price*0.8,2)</span>
+      <span class="discount-rate">20% off</span>
+    </div>
+    <a href="#" class="add-to-cart">Add to cart</a>
+  </div>
+</div>
+</div>
