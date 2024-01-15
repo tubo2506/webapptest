@@ -14,9 +14,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Item_CS;
 public class MyStartup{
     public void ConfigureServices( IServiceCollection services)
     {
+        services.AddSingleton<ItemListService>();
             services.AddRazorPages().AddRazorPagesOptions(options => {
                 options.RootDirectory = "/Pages";
             });

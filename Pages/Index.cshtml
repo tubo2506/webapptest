@@ -5,8 +5,8 @@
     ViewData["Title"] = "Home page";
 }
 
-@await Component.InvokeAsync("Filter_bar", true);
+@await Component.InvokeAsync("Filter_bar");
 
 <div class="container">
-    @await Component.InvokeAsync("ItemInfo")
+    @await Component.InvokeAsync("ItemInfo", true)
 </div>
