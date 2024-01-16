@@ -18,16 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\LETUDIVN\Documents\Hello_aps
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/LETUDIVN/Documents/Hello_aps/Hello_aps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SGVsbG9fYXBzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/LETUDIVN/Documents/Hello_aps/Pages/pagemodel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGFnZW1vZGVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LETUDIVN/Documents/Hello_aps/Pages/Privacy.cshtml]

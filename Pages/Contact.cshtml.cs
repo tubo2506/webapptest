@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace MyApp.Namespace
+
+namespace Customer
 {
-    public class PageModelModel : PageModel
+    public class ContactModel : PageModel
     {
+        [BindProperty]
+        public CustomerInfo? CustomerInfo {set; get;}
         public void OnGet()
         {
         }

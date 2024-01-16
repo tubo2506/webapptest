@@ -34,7 +34,6 @@ public class MyStartup{
         }
         app.UseStaticFiles();
         app.UseRouting();
-
         app.UseEndpoints(endpoints => {
             endpoints.MapRazorPages();
             endpoints.MapGet("/", async (context) => {
@@ -45,7 +44,7 @@ public class MyStartup{
                      await context.Response.WriteAsync("Ban hay dang nhap!");
                 });
         
-            endpoints.MapGet("/contact", async (context) => {
+            endpoints.MapGet("/hotline", async (context) => {
                      await context.Response.WriteAsync("Ban hay lien he tt: 0202-933-81");
                 });
             app.UseStatusCodePages();

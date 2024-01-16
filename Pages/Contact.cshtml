@@ -1,0 +1,15 @@
+﻿@page "/Contact/{id?}"
+@using Customer
+@model ContactModel
+@{
+}
+
+<h1>Contact for U</h1>
+<div class="contactFormContainer">
+<form method="post" asp-page="Contact">
+    <label asp-for="@Model.CustomerInfo.Name"></label>
+    <input asp-for="@Model.CustomerInfo.Name">
+    <label asp-for="@Model.CustomerInfo.Email"></label>
+    <input asp-for="@Model.CustomerInfo.Email">
+</form>
+</div>
