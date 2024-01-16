@@ -5,14 +5,18 @@ namespace Customer{
     public class CustomerInfo
     {
         [DisplayName("Your Name is:")]
+        [StringLength(10,MinimumLength =3,ErrorMessage ="Loi")]
+        [Required]
         public string? Name{set;get;}
         [DisplayName("Your year of birth is:")]
         public int? BornYear{set;get;}
         [DisplayName("Your address is:")]
-        public string? Address{set;get;}
+        public string Address{set;get;}
         [DisplayName("Your email is:")]
-        public string? Email{set;get;}
+        [Required]
+        [EmailAddress]
+        public string Email{set;get;}
         [DisplayName("Your phone number is:")]
-        public string? PhoneNum{set;get;}
+        public string PhoneNum{set;get;}
     }
 }

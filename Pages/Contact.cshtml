@@ -6,10 +6,22 @@
 
 <h1>Contact for U</h1>
 <div class="contactFormContainer">
-<form method="post" asp-page="Contact">
-    <label asp-for="@Model.CustomerInfo.Name"></label>
-    <input asp-for="@Model.CustomerInfo.Name">
-    <label asp-for="@Model.CustomerInfo.Email"></label>
-    <input asp-for="@Model.CustomerInfo.Email">
+<form method="post" asp-page="Contact" class="m-2 p-3 ">
+    <div class="form-group">
+        <div class="form-group" id="cusName">
+            <label asp-for="CustomerInfo.Name"></label>
+            <input asp-for="CustomerInfo.Name" class="form-control">
+            <span asp-validation-for="CustomerInfo.Name"></span>
+        </div>
+        <div class="form-group" id="cusEmail">
+            <label asp-for="CustomerInfo.Email"></label>
+            <input asp-for="CustomerInfo.Email">
+            <span asp-validation-for="CustomerInfo.Email"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Send information</button>
+        </div>
+    </div>
+        
 </form>
 </div>

@@ -7,7 +7,7 @@ namespace Customer
     public class ContactModel : PageModel
     {
         [BindProperty]
-        public CustomerInfo? CustomerInfo {set; get;}
+        public CustomerInfo CustomerInfo {set; get;}
         public void OnGet()
         {
         }
